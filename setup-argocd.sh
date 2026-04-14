@@ -17,6 +17,8 @@ kubectl rollout status deployment/argocd-server -n $NAMESPACE
 kubectl rollout status deployment/argocd-repo-server -n $NAMESPACE
 kubectl rollout status deployment/argocd-application-controller -n $NAMESPACE
 kubectl rollout status deployment/argocd-dex-server -n $NAMESPACE
+sleep 120
+kubectl get po -n $NAMESPACE
 
 # Change the service type to LoadBalancer
 echo "Updating argocd-server service to use LoadBalancer"
