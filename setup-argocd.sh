@@ -11,6 +11,8 @@ kubectl get ns
 kubectl get all -n $NAMESPACE
 kubectl get po -n $NAMESPACE
 
+#This is another testing I'm adding
+
 # Install ArgoCD
 echo "Installing ArgoCD"
 kubectl apply -n $NAMESPACE -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
