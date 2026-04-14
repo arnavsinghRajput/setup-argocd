@@ -6,6 +6,9 @@ NAMESPACE="argocd"
 # Create namespace
 echo "Creating namespace: $NAMESPACE"
 kubectl create namespace $NAMESPACE
+#This chnages is done at Remote Repo
+kubectl get ns
+kubectl get all -n $NAMESPACE
 
 # Install ArgoCD
 echo "Installing ArgoCD"
